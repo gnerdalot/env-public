@@ -1,3 +1,4 @@
+echo .zshrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -99,5 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias fing='find . -print | egrep '
 NEWLINE=$'\n'
 PROMPT='%(?.√.?%?) %(?:%{%}➜:%{%}➜) %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info) ${NEWLINE} %% '
+PATH=$HOME/venv/default/bin:$HOME/bin:$PATH
